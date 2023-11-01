@@ -1,0 +1,97 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.containered{
+    width: auto;
+    margin: auto;
+    background-color: red;
+}
+.profile{
+    padding: 15px 0;
+    max-width: 250px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner{
+    height: 60vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.banner h2{
+    color: #ffff;
+    z-index: 1;
+    padding: 15px 25px;
+    border: 5px solid #ffff;
+}
+
+/*Header*/
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.nav-logo h1 a, .nav-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+.section{
+    font-size: 1.5em;
+    text-align: center;
+    color: red;
+}
+.sectiondesc{
+    font-size: 0.8em;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+/*Posting*/
+.posting{
+    padding: 2% 0;
+}
+.post-title h2{
+    font-size: 2.5em;
+    line-height: 120%;
+}
+.post-content{
+    line-height: 180%;
+}
+.post-more a{
+    letter-spacing: 2px;
+    color: black;
+}
+.copyright{
+    text-align: center;
+}
